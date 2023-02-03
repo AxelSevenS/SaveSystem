@@ -1,8 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using Scribe;
-
 namespace SevenGame.SavingSystem {
 
     [System.Serializable]
@@ -12,8 +10,6 @@ namespace SevenGame.SavingSystem {
         public static System.TimeSpan timeSinceEpochStart => (System.DateTime.UtcNow - epochStart);
 
         public static System.DateTime loadedTime = System.DateTime.UtcNow;
-
-        public Dictionary<string, int> flags = new Dictionary<string, int>();
 
 
         public uint saveTimeSeconds = 0;
@@ -40,8 +36,6 @@ namespace SevenGame.SavingSystem {
 
             // Update the Time of loading this save file so "session playtime" gets reset and isn't added multiple times.
             loadedTime = System.DateTime.UtcNow;
-
-            flags = ScribeFlags.flags;
         }
 
         public virtual void Load() {
@@ -55,8 +49,6 @@ namespace SevenGame.SavingSystem {
 
             // Time of loading this save file is stored temporarily to calculate play time of this session.
             loadedTime = System.DateTime.UtcNow;
-            
-            ScribeFlags.flags = flags;
         }
 
 
