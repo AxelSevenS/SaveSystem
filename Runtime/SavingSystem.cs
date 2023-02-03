@@ -6,7 +6,7 @@ using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace SeleneGame.Core {
+namespace SevenGame.SavingSystem {
 
     public class SavingSystem<T> where T : SaveData, new() {
 

@@ -3,7 +3,7 @@ using UnityEngine;
 
 using Scribe;
 
-namespace SeleneGame.Core {
+namespace SevenGame.SavingSystem {
 
     [System.Serializable]
     public abstract class SaveData {
