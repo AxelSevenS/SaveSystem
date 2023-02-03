@@ -1,0 +1,15 @@
+{
+    "name": "com.seven.saving-system",
+    "version": "0.0.1",
+    "displayName": "Saving System",
+    "description": "Custom Generic Saving System",
+    "unity": "2021.3",
+    "unityRelease": "6f1",
+    "author": {
+      "name": "Seven",
+      "email": "axelsevenet@gmail.com"
+    },
+    "dependencies": {
+        "com.seven.utility" : "0.0.1"
+    }
+}
